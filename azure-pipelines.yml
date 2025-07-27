@@ -30,6 +30,7 @@ stages:
   jobs:
   - job: BuildJob
     pool:
+      name: local
       vmImage: $(vmImageName)
     steps:
     - task: UsePythonVersion@0
